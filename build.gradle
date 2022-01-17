@@ -61,6 +61,14 @@ repositories {
     flatDir {
         dirs 'libs'
     }
+    maven {
+        name 'm2-dv8tion'
+        url 'https://m2.dv8tion.net/releases'
+    }
+    maven {
+        name = 'sonatype'
+        url = 'https://oss.sonatype.org/content/groups/public/'
+    }
 }
 
 //Forge
@@ -121,6 +129,11 @@ dependencies {
 
     //Dynmap-API
     compileOnly('com.github.webbukkit:DynmapCoreAPI:2.5')
+
+    embed 'net.kyori:adventure-api:4.9.3'
+    embed "dev.vankka:MCDiscordReserializer:4.2.2"
+    embed "dev.vankka:SimpleAST:2.2.7"
+    embed "net.kyori:adventure-text-serializer-legacy:4.9.3"
 }
 
 
